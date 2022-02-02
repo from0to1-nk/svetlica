@@ -77,3 +77,33 @@ function windowSize() {
 
 window.addEventListener('load', windowSize);
 window.addEventListener('resize', windowSize)
+
+///////////все слайдер
+/////////////////////////////
+//разрушение свайпера если высота экрана меньше 1050 и его активация   
+let swiperV = undefined;
+
+function initSwiper() {
+
+    let screenWidth = window.innerWidth;
+    if (screenWidth > 992 && swiperV == undefined) {
+        swiperV = new Swiper('.full-screen-content', {
+            direction: 'vertical',
+            mousewheel: true,
+            speed: 600,
+        });
+
+    } else if (screenWidth < 992 && swiperV != undefined) {
+        swiperV.destroy();
+        swiperV = undefined;
+
+    }
+}
+
+//Swiper plugin initialization
+initSwiper();
+
+//Swiper plugin initialization on window resize
+window.addEventListener('resize', function () {
+    initSwiper();
+});

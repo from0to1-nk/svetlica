@@ -2098,3 +2098,8 @@ a.employe-card__photo {
   background-size: cover;
   min-height: 100%;
 }
+
+.full-screen-content {
+  height: 100vh;
+  width: 100%;
+}
