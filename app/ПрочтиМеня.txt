@@ -1,0 +1,25 @@
+В dubl.html находится размется нового хедера и блока со слайдером.
+
+Стили скопировала с хостинга, по возможности убрала стили старого хедера.
+
+В старом js файле лучше убрать последний скрипт 
+function () {
+//     var t = $(".menu-icon"),
+//         o = $(".top_menu"),
+//         e = $("body");
+
+//     function a() {
+//         o.fadeOut(200), setTimeout(function () {и тд
+он уже лишний
+
+Стили с новинками на диске(минифицированны), лучше их подрубать последними.
+
+В папочке dist просто рабочий пример нового хедера и слайдера.
+
+На главную нужно header добавить класс fixed, а на остальных страницах его быть не должно изначально
+
+
+Шрифты подключала линками
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;900&display=swap" rel="stylesheet">
